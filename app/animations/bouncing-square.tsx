@@ -1,4 +1,4 @@
-import { router, Stack, useNavigation } from 'expo-router';
+import { useNavigation } from 'expo-router';
 import { useEffect } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Animated, {
@@ -54,7 +54,7 @@ const BouncingSquare = (props: IProps): React.ReactElement<IProps> => {
           rotate.value = withRepeat(withTiming(rotate.value + 90), 4, true);
           rotate.value = withTiming(rotate.value + 90);
         }}
-        className={` rounded-[30px] bg-blue-500`}
+        className="rounded-[30px] bg-blue-500"
         style={[styles.square, rStyle]}
       />
       <Animated.View style={[styles.square, rStyle]} />

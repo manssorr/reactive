@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 
 const AnimationsList = {
   'bouncing-square': 'Animated Square Bouncing',
+  'pan-gesture': 'Pan Gesture',
 };
 
 export type AnimationPaths = keyof typeof AnimationsList;

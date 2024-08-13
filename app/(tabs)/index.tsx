@@ -7,7 +7,8 @@ export default function Home() {
     <View className="flex-1">
       <FlatList<(typeof AnimationsListItems)[number]>
         data={AnimationsListItems}
-        className="flex-1 p-2 "
+        className="flex-1 p-2"
+        ItemSeparatorComponent={() => <View className="h-2" />}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => appRouter.navigateAnimation(item.path)}>
             <View className="w-full rounded-2xl bg-cyan-500 p-4">
